@@ -1,0 +1,42 @@
+{
+  "name": "ayles-software/laravel-australian-public-holidays",
+  "description": "Australian public holidays",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Benjamin Ayles",
+      "email": "ben@aylessoftware.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2.5",
+    "laravel/framework": "^7.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.16"
+  },
+  "autoload": {
+    "classmap": [
+      "database/seeds"
+    ],
+    "psr-4": {
+      "PublicHolidays\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PublicHolidays\\ServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "cs-fix": "vendor/bin/php-cs-fixer fix"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
