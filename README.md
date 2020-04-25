@@ -6,6 +6,12 @@ This is a very simple package that reads and saves the public holidays for all s
 ```
 composer require ayles-software/laravel-australian-public-holidays
 ```
+
+## Publish the config
+```
+php artisan vendor:publish --provider=ayles-software/laravel-australian-public-holidays
+```
+
 ## Usage
 
 ```bash
