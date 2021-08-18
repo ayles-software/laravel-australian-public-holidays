@@ -20,17 +20,19 @@ class PublicHoliday extends Model
         'state',
     ];
 
-    const STATE_SA = 'SA';
+    public const STATE_SA = 'SA';
 
-    const STATE_VIC = 'VIC';
+    public const STATE_VIC = 'VIC';
 
-    const STATE_NSW = 'NSW';
+    public const STATE_NSW = 'NSW';
 
-    const STATE_NT = 'NT';
+    public const STATE_NT = 'NT';
 
-    const STATE_WA = 'WA';
+    public const STATE_WA = 'WA';
 
-    const STATE_ACT = 'ACT';
+    public const STATE_ACT = 'ACT';
 
-    const STATE_QLD = 'QLD';
+    public const STATE_QLD = 'QLD';
+
+    public const STATE_TAS = 'TAS';
 }

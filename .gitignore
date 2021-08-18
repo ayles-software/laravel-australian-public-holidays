@@ -2,3 +2,9 @@
 .DS_Store
 
 .idea/
+
+.php-cs-fixer.cache
+
+vendor/
+
+composer.lock
