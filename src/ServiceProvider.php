@@ -19,6 +19,7 @@ class ServiceProvider extends BaseServiceProvider
         ], 'public-holidays-config');
 
         $this->loadMigrationsFrom(realpath(dirname(__FILE__).'/../database/migrations'));
+        $this->mergeConfigFrom(__DIR__.'/../config/public-holidays.php', 'public-holidays');
 
         $this->commands([
             Holidays::class,
