@@ -46,7 +46,7 @@ class PublicHolidayGenerator
 
         collect($response['result']['records'] ?? [])->transform(function ($record) {
             PublicHoliday::updateOrCreate([
-                'date' => Carbon::createFromFormat('Ymd', $record['Date']),
+                'date' => Carbon::createFromFormat('Ymd', $record['Date'])->format('Y-m-d'),
                 'name' => $record['Holiday Name'],
                 'state' => Str::upper($record['Jurisdiction']),
             ], [
